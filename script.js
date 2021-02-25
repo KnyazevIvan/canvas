@@ -16,9 +16,11 @@ const config = {
     maxVelocity: 5,
     dotColor: 'rgba(255, 255, 255)',
     lineColor: '0,181,255',
-    dotQuantity: canvas.width / 20,
-    distance: canvas.width / 4,
+    dotQuantity: canvas.width < 600 ? 40 : 60,
+    distance: canvas.width < 600 ? 150 : 300,
 }
+
+console.log(config);
 
 class Dot {
     constructor(x, y, r, v) {
