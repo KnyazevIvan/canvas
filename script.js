@@ -17,7 +17,7 @@ const config = {
     dotColor: 'rgba(255, 255, 255)',
     lineColor: '0,181,255',
     dotQuantity: canvas.width / 20,
-    distance: 300
+    distance: canvas.width / 4,
 }
 
 class Dot {
